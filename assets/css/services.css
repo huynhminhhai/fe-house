@@ -1,0 +1,200 @@
+/* breadcrumb */
+
+.section__banner {
+    height: 70vh;
+}
+
+.section__banner .banner__img {
+    height: 70vh;
+    object-position: top;
+}
+
+.section__banner .banner__title {
+    font-size: 70px;
+}
+
+/* services */
+
+.section__services {
+    padding: 120px 0;
+}
+
+.section__services .services__item {
+    min-height: 420px;
+    margin-bottom: 30px;
+}
+
+.section__services .services__flip {
+    -webkit-perspective: 1000;
+    -moz-perspective: 1000;
+    -ms-perspective: 1000;
+    perspective: 1000;
+    -webkit-transform: perspective(1000px);
+    -moz-transform: perspective(1000px);
+    -ms-transform: perspective(1000px);
+    transform: perspective(1000px);
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+}
+.section__services .services__flip {
+    min-height: 420px;
+    margin-bottom: 30px;
+}
+.section__services .services__img,
+.section__services .services__content {
+    width: 100%;
+    height: 100%;
+}
+
+.section__services .services__img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section__services .services__img {
+    -webkit-transition: -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.25);
+    transition: -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.25);
+    -o-transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.25);
+    transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.25);
+    transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.25), -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.25);
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.section__services .services__img h4 {
+    color: #fff;
+    font-size: 27px;
+    text-align: left;
+    margin: 0;
+    display: inline-flex;
+}
+.section__services .services__flip .services__img {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    z-index: 1;
+}
+.section__services .services__flip:hover .services__img {
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+.section__services .services__content {
+    background: #323232;
+    background-size: cover;
+    background-position: center center;
+    -webkit-transition: -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.25);
+    transition: -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.25);
+    -o-transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.25);
+    transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.25);
+    transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.25), -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.25);
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.section__services .services__content:before {
+    top: 25px;
+    left: 15px;
+    right: 15px;
+    bottom: 25px;
+}
+.section__services .services__content h4 a {
+    font-size: 27px;
+    color: #fff;
+    margin-bottom: 20px;
+    display: block;
+}
+.section__services .services__content p {
+    font-size: 17px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.section__services .services__flip .services__content {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    z-index: 1;
+}
+.section__services .services__flip:hover .services__content {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+.section__services .services__img--content {
+    padding: 40px;
+    text-align: center;
+    height: 420px;
+    position: relative;
+    -webkit-transition: -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.25);
+    transition: -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.25);
+    -o-transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.25);
+    transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.25);
+    transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.25), -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.25);
+    -webkit-transform: translateX(0px) scale(1);
+    -ms-transform: translateX(0px) scale(1);
+    transform: translateX(0px) scale(1);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    z-index: 2;
+}
+
+.section__services .services__flip:hover .services__img--content {
+    -webkit-transform: translateX(-650px) scale(0.88);
+    -ms-transform: translateX(-650px) scale(0.88);
+    transform: translateX(-650px) scale(0.88);
+}
+.section__services .services__content--group {
+    padding: 30px;
+    text-align: left;
+    position: relative;
+    top: 50%;
+    -webkit-transition: -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.25);
+    transition: -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.25);
+    -o-transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.25);
+    transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.25);
+    transition: transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.25), -webkit-transform 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.25);
+    -webkit-transform: translateY(-50%) translateX(650px) translateZ(60px) scale(0.88);
+    transform: translateY(-50%) translateX(650px) translateZ(60px) scale(0.88);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    z-index: 2;
+}
+.section__services .services__flip:hover .services__content--group {
+    -webkit-transform: translateY(-50%) translateX(0px) translateZ(0px) scale(1);
+    transform: translateY(-50%) translateX(0px) translateZ(0px) scale(1);
+}
+.section__services .flip-overlay {
+    display: block;
+    background: #000;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .2;
+}
+@media screen and (max-width: 991px) {
+    .section__services .services__flip {
+        margin-bottom: 60px;
+    }
+    .section__services {
+        padding-bottom: 70px;
+    }
+}

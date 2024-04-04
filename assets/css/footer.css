@@ -1,0 +1,98 @@
+.section__footer {
+    padding-top: 30px;
+}
+
+.section__footer .footer__left--img {
+    margin-bottom: 15px;
+}
+
+.section__footer .footer__left--img img {
+    width: 150px;
+    height: 45px;
+    width: auto;
+    display: block;
+}
+
+.section__footer .footer__left--desc,
+.section__footer .footer__right--content {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.75em;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 20px;
+    letter-spacing: 0.25px;
+}
+
+.section__footer .footer__left--social-link {
+    font-size: 17px;
+    margin-right: 10px;
+    color: rgba(255, 255, 255, 0.7);
+    transition: all 0.3s linear;
+}
+
+.section__footer .footer__left--social-link:hover {
+    color: var(--text-color);
+    transition: all 0.3s linear;
+}
+
+.section__footer .footer__center,
+.section__footer .footer__right,
+.section__footer .footer__left {
+    margin-bottom: 30px;
+}
+
+.section__footer .footer__center .footer__center--list {
+    padding: 0;
+}
+
+.section__footer .footer__center .footer__center--list li {
+    margin-bottom: 5px;
+}
+
+.section__footer .footer__center .footer__center--list li a {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 17px;
+    transition: all 0.3s linear;
+}
+
+.section__footer .footer__center .footer__center--list li a:hover {
+    color: var(--text-color);
+    transition: all 0.3s linear;
+}
+
+.section__footer .footer__title {
+    color: #fff;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.section__footer .footer__right--content span {
+    display: block;
+}
+
+.sub__footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.025);
+    padding: 20px 0;
+}
+
+.sub__footer .sub__footer--text,
+.sub__footer .sub__footer--text a{
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.75em;
+    color: #999;
+    letter-spacing: 0.25px;
+    transition: all 0.3s linear;
+}
+
+.sub__footer .sub__footer--text.right span {
+    padding: 0 10px;
+}
+
+.sub__footer .sub__footer--text a:hover {
+    color: var(--text-color);
+    transition: all 0.3s linear;
+}

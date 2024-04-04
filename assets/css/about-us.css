@@ -1,0 +1,209 @@
+/* banner */
+
+.section__banner {
+    height: 70vh;
+}
+
+.section__banner .banner__img {
+    height: 70vh;
+    object-position: top;
+}
+
+/* client */
+
+.section__client {
+    background-image: url(../images/home/banner-2.jpg);
+    background-repeat: no-repeat;
+    padding: 120px 0;
+    position: relative;
+
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.section__client::before {
+    background: #272727;
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+
+.section__client .client__infor--img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.section__client .client__box {
+    padding: 60px 30px;
+    background-color: var(--bg-color);
+    position: relative;
+    color: #999;
+}
+
+.section__client .client__quot {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    width: 90px;
+    height: auto;
+}
+
+.section__client .client__item--desc {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.75em;
+    color: #999;
+    margin-bottom: 20px;
+    letter-spacing: 0.25px;
+    display: block;
+}
+
+.section__client .client__infor {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.section__client .client__infor {
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+.section__client .client__infor--content h4 {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 0;
+    line-height: 1em;
+}
+
+.section__client .client__infor--content span {
+    font-size: 15px;
+    color: #c5a47e;
+    display: block;
+}
+
+.section__client .slider .owl-item {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+    opacity: .7;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    border-bottom: 3px solid transparent;
+}
+
+.section__client .slider .owl-item.active.center {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+    border-bottom: 1px solid #c5a47e;
+    -webkit-transition: all .6s;
+    transition: all .6s;
+}
+
+.section__client .owl-dots {
+    margin-top: 30px;
+}
+
+.section__client .slider {
+    position: relative;
+}
+
+/* cretive */
+
+.section__cretive {
+    padding: 120px 0;
+}
+
+.section__cretive .cretive__item {
+    display: flex;
+    align-items: self-start;
+    gap: 40px;
+    padding: 50px;
+    border: 1px solid #323232;
+    margin-bottom: 30px;
+}
+
+.section__cretive .row .col-md-6:nth-child(odd) .cretive__item {
+    flex-direction: row-reverse;
+}
+
+.section__cretive .cretive__item:hover {
+    background: #323232;
+    border: 1px solid #323232;
+}
+
+.section__cretive .cretive__img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.section__cretive .cretive__content {
+    flex: 1 0 0;
+    color: #fff;
+}
+
+.section__cretive .cretive__name {
+    color: #fff;
+    margin-right: 7px;
+    font-size: 21px;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.section__cretive .cretive__subtitle {
+    margin-left: 7px;
+    color: #c5a47e;
+    font-size: 16px;
+}
+
+.section__cretive .cretive__desc {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.75em;
+    color: #999;
+    margin-bottom: 20px;
+    letter-spacing: 0.25px;
+    display: block;
+}
+
+.section__cretive .cretive__social a {
+    text-align: center;
+    width: 35px;
+    height: 35px;
+    line-height: 38px;
+    border-radius: 50%;
+    border: 1px solid #424242;
+    color: #999;
+    font-size: 12px;
+    display: inline-block;
+}
+
+.section__cretive .cretive__social a:hover {
+    color: #fff;
+    border: 1px solid var(--text-color);
+}
+
+@media screen and (max-width: 991px) {
+    /* client */
+
+    .section__cretive .cretive__item,
+    .section__cretive .row .col-md-6:nth-child(odd) .cretive__item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .section__cretive .cretive__img {
+        margin: auto;
+    }
+}

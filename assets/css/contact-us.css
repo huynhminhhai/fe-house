@@ -1,0 +1,42 @@
+/* form */
+
+.btn:hover {
+    color: #fff;
+}
+
+.section__form {
+    padding: 120px 0;
+}
+
+.section__form h3,
+.section__form h2 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.section__form span {
+    display: block;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.75em;
+    color: #999;
+    margin-bottom: 15px;
+    letter-spacing: 0.25px;
+}
+
+.section__form span b {
+    font-weight: 400;
+    color: #c5a47e;
+}
+
+input[type="password"], input[type="email"], input[type="text"], input[type="file"], textarea {
+    border-bottom: 1px solid #323232;
+}
+
+@media screen and (max-width: 768px) {
+    .section__form {
+        padding: 80px 0;
+    }
+}
